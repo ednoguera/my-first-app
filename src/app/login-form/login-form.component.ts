@@ -9,17 +9,23 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class LoginFormComponent implements OnInit {
   public registerForm: FormGroup = this.formBuilder.group({
     firstName: [''],
+    lastName: [''],
+    email: [''],
+    password: [''],
   })
+
+  inputFormArray: any[] = [];
 
   constructor(
     private formBuilder: FormBuilder,
   ) { }
 
   ngOnInit(): void {
-
+    this.inputFormArray.push(Object.keys(this.registerForm?.controls));
   }
 
   public onSubmitForm() {
-    console.log(this.registerForm.value);
+    console.log(this.registerForm.controls);
+    console.log(this.inputFormArray);
   }
 }
