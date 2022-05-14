@@ -1,0 +1,11 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmitForm()">
+    <input type="text" formControlName="firstName">
+
+    <button>login</button>
+</form>
+
+<div>
+    <p>
+        {{registerForm.get('firstName')?.value}}
+    </p>
+</div>

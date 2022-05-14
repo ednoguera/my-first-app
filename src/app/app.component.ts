@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.sass'],
 })
+// eslint-disable-next-line import/prefer-default-export
 export class AppComponent {
-  title = 'my-first-app';
+  title = 'Vamos para o Porto, ora pois!';
 }
