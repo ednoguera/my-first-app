@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 // eslint-disable-next-line import/no-unresolved
 import { LoginFormComponent } from './login-form/login-form.component';
 import { LoginComponent } from './login/login.component';
+import { PreRegisterFormComponent } from './pre-register-form/pre-register-form.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'last-chance',
+    component: PreRegisterFormComponent,
   },
 ];
 
