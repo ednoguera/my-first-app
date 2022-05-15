@@ -1,0 +1,13 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmitForm()">
+    
+    <div *ngFor="let controlName of inputFormArray[0]">
+        <input type="text" formControlName="{{controlName}}">
+    </div>
+    <button>register</button>
+</form>
+
+<div *ngFor="let controlName of inputFormArray[0]">
+    <p >
+        {{registerForm.get(controlName)?.value !== 'password' ? registerForm.get(controlName)?.value : 'This property can not be displayed'}}
+    </p>
+</div>
