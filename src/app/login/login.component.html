@@ -1,0 +1,10 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmitForm()">
+    <div *ngFor="let controlName of inputFormArray[0]">
+        <input type="text" formControlName="{{controlName}}">
+    </div>
+    <button>login</button>
+</form>
+
+<div *ngIf="loginForm.get('password')">
+    <p>User not allowed!</p>
+</div>

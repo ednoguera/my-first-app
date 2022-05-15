@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+    <app-title title="Hello world"></app-title>
+    <router-outlet></router-outlet>
+  `,
   styleUrls: ['./app.component.sass'],
 })
 // eslint-disable-next-line import/prefer-default-export

@@ -11,7 +11,8 @@ export class LoginFormComponent implements OnInit {
     firstName: [''],
     lastName: [''],
     email: [''],
-    password: [''],
+    occupation: [''],
+    likeToDo: [''],
   })
 
   inputFormArray: any[] = [];
