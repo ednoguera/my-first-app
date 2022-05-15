@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { LoginComponent } from './login/login.component';
+import { PreRegisterFormComponent } from './pre-register-form/pre-register-form.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { LoginComponent } from './login/login.component';
     TitleComponent,
     LoginFormComponent,
     LoginComponent,
+    PreRegisterFormComponent,
   ],
   imports: [
     BrowserModule,

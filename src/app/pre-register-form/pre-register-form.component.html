@@ -1,0 +1,11 @@
+<form [formGroup]="preRegisterForm" (ngSubmit)="onSubmitForm()">
+    <div *ngFor="let propertyName of formPropertiesArray[0]">
+        <input type="text" formControlName="{{propertyName}}">
+        <br>
+        <br>
+    </div>
+    <br>
+    <div>
+        <button>submit</button>
+    </div>
+</form>
